@@ -1,0 +1,171 @@
+<!--<html>
+	<body>
+		<div style="margin:0px;width:auto;border:solid red 2px;float:left">
+			<div style="border:solid blue 2px;float:left;"><p>this is text</p></div>
+			<div style="border:solid green 2px;float:left;"><p>This is another div</p></div>
+		</div>
+		<div style="clear:both;"></div>
+		<div style="border:solid black 2px;"></div>
+	</body>
+
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="E:\Hollywood movie\J Query prac\style\test1.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+/*$(document).ready(function(){
+var cnt=0,var1=0;
+  $("button").click(function(){
+  //function m1(){
+	//cnt = cnt + 1;
+	//$("#cntt").append("<br/>" + cnt);
+	//alert("hello");
+   //$("button").trigger('click');
+    $("ul li:first-child").toggle();
+	//$(this).html("click me again");
+		//myt();
+		setTimeout(function(){
+		myt()
+		},1000);
+//	}
+	//m1();
+	//$("button").click(function(){
+	//	m1();
+	//});
+  });
+function myt()
+{
+	//$("#cntt").empty();
+	var dt = new Date();
+	var min1 = dt.getMinutes();
+	var1 = min1;
+	$("#time1").empty();
+	$("#time1").append(min1);
+	//if min1 == 
+	cnt = cnt + 1;
+	$("#cntt").append("<br/>" + cnt);
+	//alert("hello");
+   $("button").trigger('click');
+}
+});*/
+
+/*(function (){
+	//$("#firul").children("li").eq("0").next().prev().css({"color":"red","font-size":"2em"});
+	$("li").parents("#firul").css({"color":"red"});
+	//(li:nt-child("your number"))
+	//eq("your number")    here 0 point to first statement.
+	//eq("your number").next().prev()   //you can also use this method to move previous and next to selected element.
+})();*/
+$(document).ready(function(){
+	var sum = 0;
+/*$("#chk").click(function(){
+	//$("button").each(function(index,element){
+		/*if (index==0)
+		{
+			//$("link").attr("href","E:\Hollywood movie\J Query prac\style\test1.css");
+			alert("0");
+			value1[0].css("color":"red");
+		}
+		else if(index==1)
+		{
+			//$("link").attr("href","E:\Hollywood movie\J Query prac\style\test2.css");
+			alert("1");
+			value1[1].css("color":"yellow");
+		}*/
+		
+		/*$("button").each(function(index,element){
+		var val1= $(this).text();
+		if (val1 == "test5")
+		{
+			console.log($(this).data("file"));
+			$("#chk").attr("disabled","disabled");
+		}
+		console.log(val1);
+		sum = sum + 1;
+		//if 
+		//alert(sum);
+		$(this).css("color","blue");
+		$(element).text("ZZZ");
+		if ($(this).is("#btn2"))
+		{
+			alert("you have pressed btn2");
+			return false;
+		}
+	});	*/
+	//});
+//});
+
+// Plugin (crome autosave)
+// margin : 0px auto;
+/*
+$(".my1").click(function(){
+	
+	
+	$(this)
+		.siblings()
+			.removeAttr("disabled")
+			.end();
+		$(this).attr("disabled","disabled");
+	
+
+})*/
+
+
+
+
+
+
+
+
+});
+</script>
+</head>
+<body>
+<div style="margin:0px auto;border:solid red 3px;">
+<div>
+<p>List 1:</p>
+</div>
+
+<ul id="firul">
+  <li>Coffee</li>
+  <li>Milk</li>
+  <li>
+		<ul> 
+			<li>1</li>
+			<li>2</li>
+		</ul>
+  </li>
+</ul>
+
+<p>List 2:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Milk</li>
+  <li>Tea</li>
+</ul>
+<div style="margin:0px auto;border-top:solid cyan 2px;width:auto">
+<!--<button class="my1">test1</button>-->
+<button class="my1">test2</button>
+<button data-file="day">test5</button>
+<button id="btn2">test1</button>
+<button class="my1">test1</button>
+<button id="chk" onclick="myfun()">check</button>
+</div>
+<p id="time1"></p>
+<p id="cntt"></p>
+</div>
+
+<script>
+	function myfun()
+	{
+		var cnt;
+		cnt = document.getElementsByClassName("my1")[0];
+		cnt.text="kkkk";
+		alert(cnt.length);
+	}
+</script>
+</body>
+</html>
